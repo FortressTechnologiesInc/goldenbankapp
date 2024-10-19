@@ -28,6 +28,12 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+	<properties>
+		<java.version>17</java.version>
+		<sonar.host.url>http://192.168.4.17:9000</sonar.host.url>
+		<sonar.login>docker</sonar.login>
+		<sonar.password>admin123</sonar.password>
+	</properties>
 	</properties>
 	<dependencies>
 		<dependency>
