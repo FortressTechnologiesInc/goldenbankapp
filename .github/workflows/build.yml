@@ -43,7 +43,7 @@ jobs:
 
     - name: Push Docker image
       run: |
-        docker push iscanprint/goldencat:0.0.2
+        docker push iscanprint/gbankapp:0.0.2
 
     - name: Logout from Docker Hub
       run: docker logout
