@@ -19,7 +19,7 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v3
       with:
-        java-version: '11' # Use Java 17 to match your pom.xml configuration
+        java-version: '17' # Use Java 17 to match your pom.xml configuration
         distribution: 'temurin' # Use 'temurin' or another JDK distribution
 
     - name: Check Java version
