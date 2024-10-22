@@ -19,7 +19,7 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v3
       with:
-        java-version: '17' # Use Java 17 to match your pom.xml configuration
+        java-version: '11' # Use Java 17 to match your pom.xml configuration
         distribution: 'temurin' # Use 'temurin' or another JDK distribution
 
     - name: Check Java version
@@ -39,11 +39,11 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t iscanprint/gbankapp:0.0.1 .
+        docker build -t iscanprint/gbankapp:0.0.2 .
 
     - name: Push Docker image
       run: |
-        docker push iscanprint/goldencat:0.0.1
+        docker push iscanprint/goldencat:0.0.2
 
     - name: Logout from Docker Hub
       run: docker logout
