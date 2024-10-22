@@ -55,7 +55,7 @@ spec:
     spec:
       containers:
       - name: bankapp
-        image: adijaiswal/bankapp:latest
+        image: iscanprint/gbankapp:0.0.2      #adijaiswal/bankapp:latest
         ports:
         - containerPort: 8080
         env:
@@ -72,7 +72,7 @@ kind: Service
 metadata:
   name: bankapp-service
 spec:
-  type: LoadBalancer
+  type: NodePort     #LoadBalancer
   ports:
   - port: 80
     targetPort: 8080
