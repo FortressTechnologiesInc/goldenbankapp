@@ -55,7 +55,7 @@ spec:
     spec:
       containers:
       - name: bankapp
-        image: iscanprint/gbankapp:0.0.2      #adijaiswal/bankapp:latest
+        image: iscanprint/gbankapp:0.0.3      #adijaiswal/bankapp:latest
         ports:
         - containerPort: 8080
         env:
